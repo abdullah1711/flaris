@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRCRAFT</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       
+       ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: black;
+        color: aliceblue;
+        text-decoration: none;
+        overflow: hidden;
+        padding: 10px 80px 10px 0px;
+        
+       }
+       li a{
+        float:left;
+        padding: 14px 16px;
+        color: aliceblue;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 13px;
+       }
+       .header{
+        background-image: url("./flaris-lar1.jpg");
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       }
+       .container{
+        background-image: url("./natali-quijano-N79MYsd2Ce4-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+       }
+       .grid-container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 10px 40px;
+        gap: 20px;
+       }
+       .grid-container div{
+        border: 0.3px solid rgb(179, 177, 177);
+       }
+       .grid-container img{
+        width: 100%;
+        height: 70vh;
+       }
+       .grid-container2{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 20vh 40px;
+        gap: 30px;
+       }
+       .grid-container2 div{
+        border: 0.3px solid rgb(151, 151, 151);
+       }
+       .grid-container2 img{
+        width: 100%;
+        height: 70vh;
+       }
+       .socket{
+        text-align: center;
+        background-image: url("./kadlub_filtr.jpg");
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: grayscale(200%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(200%);
+        color: aliceblue;
+        margin-top: 70px;
+       }
+       .socket p{
+        padding: 40px 150px;
+        font-size: 18px;
+       }
+       .socket h1{
+        padding: 50px 150px 0px 150px;
+       }
+
+       .grid-container3{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 10px 40px;
+        gap: 20px;
+       }
+       .grid-container3 div{
+        border: 0.1px solid rgb(173, 172, 172);
+       }
+       .grid-container3 img{
+        width: 100%;
+        height: 74vh;
+       }
+       
+       .grid-container4{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 10px 40px;
+        gap: 20px;
+       }
+       .grid-container4 div{
+        border: 0.1px solid rgb(199, 198, 198);
+       }
+       .grid-container4 img{
+        width: 100%;
+        height: 74vh;
+       }
+
+       .container3{
+        background-image: url("./kabina_filtr.jpg");
+        background-position: center;
+        background-size: cover;
+        
+       }
+       .grid-containerb{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 350px;
+        
+       }
+       .grid-containerb h1{
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+       }
+    .grid-containerb button{
+        padding: 20px 30px;
+        color: rgb(19, 152, 230);
+        border-color:rgb(19, 152, 230) ;
+        background-color: black;
+        margin: 30px 0px;
+        font-weight: 700;
+        cursor: pointer;
+        gap: 10px;
+    }
+    .exterior-design{
+        text-align: center;
+        background-image: url("./design_filtr.jpg");
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: grayscale(200%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(200%);
+        color: aliceblue;
+        margin-top: 70px;
+       }
+       .exterior-design p{
+        padding: 40px 150px;
+        font-size: 18px;
+       }
+       .exterior-design h1{
+        padding: 50px 150px 0px 150px;
+       }
+       .flaris{
+        text-align: center;
+        background-image: url("./flarislar01_filtr.jpg");
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: grayscale(200%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(200%);
+        color: aliceblue;
+        margin-top: 70px;
+       }
+       .flaris p{
+        padding: 40px 100px;
+        font-size: 18px;
+       }
+       .flaris h1{
+        padding: 50px 100px 0px 100px;
+       }
+       .got-question img{
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 10vh;
+       }
+       .got-question h1{
+        padding: 50px 60px;
+        font-size: 30px;
+       }
+
+       <!--form-->
+
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+       * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: "Inter", sans-serif;
+        }
+        .formbold-main-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 48px;
+        }
+      
+        .formbold-form-wrapper {
+          margin: 0 auto;
+          max-width: 550px;
+          width: 100%;
+          background: white;
+        }
+      
+        .formbold-input-flex {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 22px;
+        }
+        .formbold-input-flex > div {
+          width: 50%;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .formbold-textarea {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      
+        .formbold-form-input {
+          width: 100%;
+          padding-bottom: 10px;
+          border: none;
+          border-bottom: 1px solid #DDE3EC;
+          background: #FFFFFF;
+          font-weight: 500;
+          font-size: 16px;
+          color: #07074D;
+          outline: none;
+          resize: none;
+        }
+        .formbold-form-input::placeholder {
+          color: #536387;
+        }
+        .formbold-form-input:focus {
+          border-color: #6A64F1;
+        }
+        .formbold-form-label {
+          color: #07074D;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          display: block;
+          margin-bottom: 18px;
+        }
+        .formbold-form-input:focus + .formbold-form-label {
+          color: #6A64F1;
+        }
+      
+        .formbold-input-file {
+          margin-top: 30px;
+        }
+        .formbold-input-file input[type="file"] {
+          position: absolute;
+          top: 6px;
+          left: 0;
+          z-index: -1;
+        }
+        .formbold-input-file .formbold-input-label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+        }
+      
+        .formbold-filename-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          margin-bottom: 22px;
+        }
+        .formbold-filename {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 14px;
+          line-height: 24px;
+          color: #536387;
+        }
+        .formbold-filename svg {
+          cursor: pointer;
+        }
+      
+        .formbold-btn {
+          font-size: 16px;
+          border-radius: 5px;
+          padding: 12px 25px;
+          border: none;
+          font-weight: 500;
+          background-color: #6A64F1;
+          color: white;
+          cursor: pointer;
+          margin-top: 25px;
+        }
+        .formbold-btn:hover {
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+    
+        .grid-containerf{
+            display: grid;
+            grid-template-columns: 30vh 30vh 30vh 100vh;
+            background-color: rgb(5, 1, 61);
+            color: aliceblue;
+            height: 30vh;
+            padding-left: 20vh;
+        }
+        .grid-containerf div{
+            border: 1px soli
+        }
+         ul{
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+        }
+        .legal  li{
+            padding: 10px 0px;
+            line-height: 15px;
+        }
+        .about li{
+            padding: 10px 0px;
+            line-height: 15px;
+        }
+        .information li{
+            padding: 10px 0px;
+            line-height: 15px;
+        }
+        hr{
+            color: blue;
+            margin: 20px 0px;
+        }
+        footer ul{
+            background-color: rgb(5, 1, 61);
+        }
+        footer{
+            background-color: rgb(5, 1, 61);;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav style="background-color: black;">
+                <li><a href="./flaris.html"><img style="width: 160px;height: 80px;float: left;; color: aliceblue;background-color: black;" src="./logoFlarisSVG.svg"></a></li>
+
+                <ul>
+                    <li><a href="./aircraft.html">AIRCRAFT</a></li>
+                    <li><a href="./piloting-courses.html">PILOTING COURSES</a></li>
+                    <li><a href="./purchase.html">PURCHASE</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">OUR STORY</a></li>
+                    <li><a href="">PRESS ROOM</a></li>
+                </ul>
+            </nav>
+            <div class="header">
+             <h1 style="color: rgb(13, 91, 194);text-align: center;padding: 70px 0px 20px 0px; "> › THE FASTEST PERSONAL JET ‹ </h1>    
+             <h2 style="color: aliceblue;padding: 20px 250px;font-family:Roboto ;font-size: 35px;font-weight: 400;">SPEED – RANGE – FREEDOM – GRASS AIRSTRIPS TAKE-OFF</h2>
+            </div>
+        </header>
+        <div class="container">
+            <h1 style="padding: 80px 0px 30px 0px;text-align: center;font-weight: 200;color: rgb(88, 88, 88);">› FLARIS LAR 01 ‹ </h1>
+            <p style="padding: 0px 200px 150px 200px;font-size: 20px;color: rgb(122, 122, 122);">The first and only aircraft of its type in the world, FLARIS LAR 01 unites jet-tier performance with levels of safety and economic accessibility previously reserved solely for small general aviation units. The cutting-edge construction made overcoming many traditional limitations possible and resulted in creation of an internationally exceptional aircraft!</p>
+        </div>
+        <div class="container1">
+            <h1 style="padding: 30px 0px;text-align: center;font-weight: 800;color: rgb(37, 37, 37);"> › FEATURES ‹ </h1>
+            <p style="padding: 30px 250px 30px 250px ;font-size: 20px;color: rgb(122, 122, 122);">FLARIS LAR 1 is a single-engine jet aircraft with lightweight, composite construction. It creates a new category of small, agile jets, ideal for quick movement for any purpose.</p>
+        </div>
+        <div class="grid-container">
+            <div>
+              <h4 style="font-size: 18px; text-align: center;font-family: 'Times New Roman', Times, serif;font-weight: 500;color: rgb(56, 56, 56);padding: 65px 15px 15px 15px;">  <strong>SOAR TO A HIGHER LEVEL OF COMFORT</strong> </h4>
+                <p style="font-size: 19px; text-align: center;font-family: 'Times New Roman', Times, serif;color: rgb(56, 56, 56);padding: 0px 40px 60px 40px;">The intuition of piloting FLARIS LAR 1 is apparent in its minimal operations, secure stall, and automatic spin recovery. The jet was designed to be flown by a single pilot (with Garmin G600 Txi radio and navigation system and FFAS® interactive onboard computer acting as a copilot). The only qualification required to fly FLARIS LAR 1 is a Private Pilot License (PPL).</p>
+            </div>
+            <div><img style="border: none;" src="./wlasciwosci_przelomowy-1024x683.jpg"></div>
+        </div>
+        <div class="grid-container2">
+            <div><img src="./wlasciwosci_przyjazny.jpg"></div>
+            <div>
+                <h4 style="font-size: 18px; font-family: 'Times New Roman', Times, serif;font-weight: 800;color: rgb(41, 41, 41);padding: 70px 30px 0px 25px;">REVOLUTIONARY AND ENVIRONMENTALLY FRIENDLY AVIATION</h4>
+                <p style="font-size: 18px; text-align: center;font-family: 'Times New Roman', Times, serif;font-weight: 500;color: rgb(56, 56, 56);padding: 30px 57px 30px 18px;">FLARIS LAR 1 is one tonne lighter than VLJ aircraft and initiates a brand new category of High-Speed Personal Jet. Light construction, extraordinary aerodynamics, and a cutting-edge FJ33-5A engine operated with an ECU computer allowed a significant reduction of fuel consumption and exhaust gas emission. Consequently, FLARIS LAR 1 is environmentally friendly.</p>
+            </div>
+            
+        </div>
+        <div class="socket">
+            <h1> › COCKPIT ‹ </h1>
+            <p>FLARIS LAR 1 is equipped with a versatile Garmin G600 Txi radio and navigation system that acts as a copilot and minimizes the number of equipment distracting the pilot.</p>
+        </div>
+
+        <div class="container1">
+            <h1 style="padding: 30px 0px 0px 0px;text-align: center;font-weight: 600;color: rgb(31, 30, 30);"> › SAFETY ‹ </h1>
+            <p style="padding: 30px 150px;font-size: 20px;color: rgb(122, 122, 122);">It is a light jet aircraft of a completely new type, being approachable for amateurs and satisfying the expectations of experienced pilots at the same time.</p>
+        </div>
+
+        <div class="grid-container3">
+            <div><img src="./bezpieczenstwo_bierne_filtr-1080x720.jpg"></div>
+            <div>
+              <h4 style="font-size: 18px; text-align: left;font-family: 'Times New Roman', Times, serif;font-weight: 500;color: rgb(56, 56, 56);padding: 70px 0px 10px 30px;">  <strong>LIFT-TO-DRAG RATIO</strong> </h4>
+                <p style="font-size: 19px; text-align: center;font-family: 'Times New Roman', Times, serif;color: rgb(105, 105, 105);padding: 0px 40px 20px 30px;">Thanks to its exceptional lift-to-drag ratio of 18 which is comparable to that of a glider and a drop-shaped semi-monocoque fuselage, FLARIS LAR 1 is able to glide 18 kilometers for every kilometer of altitude loss in a power-off setting. This gives the pilot a lot of time to find a landing site in case of emergency. Just a 250-meter-long grass airstrip will enable you to perform a safe landing, thanks to a solid landing gear.</p>
+                <h4 style="font-size: 18px; text-align: left;font-family: 'Times New Roman', Times, serif;font-weight: 500;color: rgb(56, 56, 56);padding: 10px 30px;">  <strong>SAFETY SYSTEM</strong> </h4>
+                <p style="font-size: 18px; text-align: center;font-family: 'Times New Roman', Times, serif;color: rgb(56, 56, 56);padding: 0px 40px 50px 20px;">FLARIS LAR 1 is equipped with a modern parachute rescue system for the whole aircraft.</p>
+            </div>
+            
+        </div>
+
+        <div class="grid-container4">
+            
+            <div>
+              <h4 style="font-size: 18px; text-align: left;font-family: 'Times New Roman', Times, serif;font-weight: 600;color: rgb(29, 29, 29);padding: 60px 0px 10px 30px;">  <strong>NAVIGATION SYSTEM</strong> </h4>
+                <p style="font-size: 19px; text-align: center;font-family: 'Times New Roman', Times, serif;color: rgb(105, 105, 105);padding: 0px 20px 20px 20px;">The avionic system of Flaris LAR uses a popular G600Txi system which provides maximal safety and convenience for the user. The GTN-750 navigation system (GPS) placed in the center of the dashboard, combines navigating function with operating additional devices, including a radio station and a transponder. It is equipped with a touch screen which helps to navigate a user-friendly icon menu.</p>
+                
+            </div>
+            <div><img src="./Flaris_samolot_nawigacja_IMG_6507-1536x1152.jpg"></div>
+            
+        </div>
+
+        <div class="socket">
+            <h1> › FUSELAGE ‹ </h1>
+            <p>FLARIS LAR 1 is ultra-light and durable thanks to its hybrid structure.  It is made mostly of pre-impregnated carbon fibers, found in the most modern long-haul aircraft, like A350 or Dreamliner. To ensure highest durability and safety, the most vital large elements of the construction (wing spars, landing-gear struts, supports of control surfaces, etc.) are milled from aluminum, using numerical control technology.</p>
+        </div>
+
+        <div class="container1">
+            <h1 style="padding: 60px 0px 0px 0px;text-align: center;font-weight: 600;color: rgb(26, 25, 25);"> › PROPULSION ‹ </h1>
+            <p style="padding: 30px 100px;font-size: 20px;color: rgb(122, 122, 122);">The solid and reliable FJ33-5 engine makes the Flaris jet safer than other light aircraft. Turbofan engines are much more reliable than reciprocating engines, and the FJ33 turbofan employed on Flaris is especially reliable due to its mature and robust design. The design of FJ33 is based directly on the larger FJ44 engine family which accumulated over 10,000,000 flight hours in total, so the engine concept has proven itself to be trustworthy. The titanium fan was proven so tough that Williams International covers foreign object damage (FOD) costs in its versatile and convenient engine maintenance program called TAP Blue. </p>
+        </div>
+
+        <div class="grid-container2">
+            <div><img src="./naped_naped_filtr-1080x720.jpg"></div>
+            <div>
+                <h4 style="font-size: 18px; text-align: center;font-family: 'Times New Roman', Times, serif;font-weight: 800;color: rgb(56, 56, 56);padding: 30px 50px 0px 50px;">UNYIELDING QUALITY</h4>
+                <p style="font-size: 18px; text-align: center;font-family: 'Times New Roman', Times, serif;font-weight: 500;color: rgb(173, 173, 173);padding: 30px 50px;">All parts and labor needed for the maintenance of FJ33 engine are provided by authorized service centers of Williams International. To enhance safety, all of our engines have been included in the Total Assurance Program (TAP Blue) by Williams lnternational. TAP Blue provides complete maintenance of the engine, and there are no added costs for the customer beyond a small fee per flight-hour, so the customers are keen to act quickly in bringing any concerns to the service center, and to keep all of their engine inspections up to date.</p>
+            </div>
+        </div>      
+            <div class="exterior-design">
+                <h1> › EXTERIOR DESIGN ‹ </h1>
+                <p>Flaris LAR1 introduces new quality to private air transport. To complement the idea of creating means of private transportation, we encourage the owners to have their jet painted according to their personal preference, so the liveries highlight the private nature of the aircraft and manifest their personality.</p>
+            </div>
+        
+            
+            <div class="flaris">
+                <h1 style="text-align: center;color: white;font-weight: 200;font-family: roboto;padding: 40px 0px;">› FLARIS & LAR 01 ‹</h1>
+                <p style="text-align: center;color: white;font-weight: 200;font-size: 17px ;padding: 40px 250px;line-height: 20px;">Flaris LAR 01 is an answer to the challenges of contemporaneity. It lets you forget about long and exhausting cruise flights, providing great economic value at the same time. Our design goal was to lower the purchase and exploitation costs to a minimum, which made our jet stand out among the competition. It is an ideal means of transport for business where time and comfort are as important as reasonable money management. </p>
+    
+                <div class="grid-containerb">
+                    <div style="margin-left: 20vh;">
+                        <h1>OWN A LAR 01</h1>
+                        <button>CHECK THE OFFER > </button>
+                    </div>
+                    <div style="margin-right: 20vh;">
+                        <h1>BECOME A PILOT</h1>
+                        <button>PILOTING COURSES > </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Got Question-->
+
+            <div class="got-question">
+                <div><img src="./masz_pytania_filtr.jpg"></div>
+                <div> <h1> › GOT QUESTIONS? CONTACT US </h1>
+                
+                <!--Form  -->
+
+            <div class="formbold-main-wrapper">
+                <!-- Author: FormBold Team -->
+                <!-- Learn More: https://formbold.com -->
+                <div class="formbold-form-wrapper">
+                  <form action="https://formbold.com/s/FORM_ID" method="POST">
+                      <div class="formbold-input-flex">
+                        <div>
+                            <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            placeholder="Jane"
+                            class="formbold-form-input"
+                            />
+                            <label for="firstname" class="formbold-form-label"> First name </label>
+                        </div>
+                        <div>
+                            <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            placeholder="Cooper"
+                            class="formbold-form-input"
+                            />
+                            <label for="lastname" class="formbold-form-label"> Last name </label>
+                        </div>
+                      </div>
+              
+                      <div class="formbold-input-flex">
+                        <div>
+                            <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="jhon@mail.com"
+                            class="formbold-form-input"
+                            />
+                            <label for="email" class="formbold-form-label"> Mail </label>
+                        </div>
+                        <div>
+                            <input
+                            type="text"
+                            name="phone"
+                            id="phone"
+                            placeholder="(319) 555-0115"
+                            class="formbold-form-input"
+                            />
+                            <label for="phone" class="formbold-form-label"> Phone </label>
+                        </div>
+                      </div>
+              
+                      <div class="formbold-textarea">
+                          <textarea
+                              rows="4"
+                              name="message"
+                              id="message"
+                              placeholder="Write your message..."
+                              class="formbold-form-input"
+                          ></textarea>
+                          <label for="message" class="formbold-form-label"> Message </label>
+                      </div>
+              
+                      <div class="formbold-input-file">
+                        
+                        <label for="upload" class="formbold-input-label">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1670_1531)">
+                            <path d="M12.3568 6.4644L7.64349 11.1786C7.5639 11.2554 7.50041 11.3474 7.45674 11.4491C7.41307 11.5507 7.39008 11.6601 7.38912 11.7707C7.38815 11.8814 7.40924 11.9911 7.45114 12.0935C7.49304 12.1959 7.55492 12.289 7.63316 12.3672C7.71141 12.4455 7.80445 12.5073 7.90686 12.5492C8.00928 12.5912 8.11901 12.6122 8.22966 12.6113C8.34031 12.6103 8.44966 12.5873 8.55133 12.5436C8.653 12.5 8.74495 12.4365 8.82182 12.3569L13.536 7.64356C14.0049 7.17468 14.2683 6.53875 14.2683 5.87565C14.2683 5.21255 14.0049 4.57661 13.536 4.10773C13.0671 3.63885 12.4312 3.37544 11.7681 3.37544C11.105 3.37544 10.469 3.63885 10.0002 4.10773L5.28599 8.8219C4.89105 9.20701 4.57652 9.6667 4.36062 10.1743C4.14473 10.6819 4.03178 11.2274 4.02832 11.779C4.02487 12.3306 4.13097 12.8774 4.34049 13.3877C4.55 13.8979 4.85876 14.3615 5.24884 14.7516C5.63892 15.1416 6.10256 15.4503 6.61287 15.6597C7.12318 15.8692 7.67 15.9752 8.2216 15.9717C8.77321 15.9681 9.31862 15.8551 9.82621 15.6391C10.3338 15.4232 10.7934 15.1086 11.1785 14.7136L15.8927 10.0002L17.071 11.1786L12.3568 15.8927C11.8151 16.4344 11.172 16.8641 10.4643 17.1573C9.75649 17.4505 8.99791 17.6014 8.23182 17.6014C7.46574 17.6014 6.70716 17.4505 5.99939 17.1573C5.29162 16.8641 4.64853 16.4344 4.10682 15.8927C3.56512 15.351 3.13542 14.7079 2.84225 14.0002C2.54908 13.2924 2.39819 12.5338 2.39819 11.7677C2.39819 11.0016 2.54908 10.2431 2.84225 9.5353C3.13542 8.82753 3.56512 8.18443 4.10682 7.64273L8.82182 2.9294C9.60767 2.17041 10.6602 1.75043 11.7527 1.75992C12.8451 1.76942 13.8902 2.20762 14.6627 2.98015C15.4353 3.75269 15.8735 4.79774 15.883 5.89023C15.8925 6.98271 15.4725 8.03522 14.7135 8.82106L10.0002 13.5369C9.76794 13.7691 9.49226 13.9532 9.18887 14.0788C8.88548 14.2045 8.56032 14.2691 8.23195 14.2691C7.90357 14.269 7.57843 14.2043 7.27507 14.0786C6.97171 13.9529 6.69607 13.7687 6.46391 13.5365C6.23174 13.3043 6.04759 13.0286 5.92196 12.7252C5.79633 12.4218 5.7317 12.0966 5.73173 11.7683C5.73177 11.4399 5.79649 11.1148 5.92219 10.8114C6.04788 10.508 6.2321 10.2324 6.46432 10.0002L11.1785 5.28606L12.3568 6.4644Z" fill="#07074D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1670_1531">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            Attach files
+                            <input type="file" name="upload" id="upload">
+                        </label>
+                      </div>
+              
+                      <button class="formbold-btn">
+                          Send Message
+                      </button>
+                  </form>
+                </div>
+              </div>
+
+                
+                </div>
+            </div>
+
+            
+
+            <footer>
+                <div class="grid-containerf">
+                    <div class="legal">
+                        <ul >
+                            <li style="font-weight: 700;font-size: 20px;"><a >Legal</a></li>
+                            <li><a>GDPR</a></li>
+                            <li><a>Privacy</a></li>
+                            <li><a>Cookies</a></li>
+                        </ul>
+        
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li style="font-weight: 700;font-size: 20px;"><a>About</a></li>
+                            <li><a>Press Room</a></li>
+                            <li><a>Manfacture</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li  style="font-weight: 700;font-size: 20px;"><a>information</a></li>
+                            <li><a>FAQ</a></li>
+                            <li><a>News</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="signup">
+                        
+                    </div>
+                </div>
+                <hr>
+                <p style="color: aliceblue;padding: 20px 20px;">© 2022 Flaris. All rights reserved.</p>
+            </footer>
+    </div>
+</body>
+</html>
